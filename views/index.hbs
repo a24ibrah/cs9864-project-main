@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>CS9549b - Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="pagewrap">
+
+	<header>
+		<h1 align="center">CS9549b Course Project</h1>
+        <h1 data-bind="text: name"></h1>
+	</header>
+
+    <!-- ko foreach: services -->
+	<section>
+		<h2 data-bind="text:name"></h2>
+		<p data-bind="text: description"></p>
+        <p align="right"><a data-bind="attr: { href: url }"><img src="img/analysis.jpg" width="50" height="50" alt=""/></a></p>
+	</section>
+    <!-- /ko -->
+
+	<footer>
+	  <h4 align="center">Team 400 @ CS9549b Winter 2017</h4>
+		<p>This page is a demo of the course project</p>
+	</footer>
+
+</div>
+</body>
+
+<script src="testModel.js"></script>
+
+</html>
