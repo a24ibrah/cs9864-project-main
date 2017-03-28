@@ -3,7 +3,7 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: cs9864-project-main
-  host: cs9864-project-main
+  name: cs9864-project
+  host: cs9864-project
   disk_quota: 128M
   command: node app.js
